@@ -111,12 +111,7 @@
                     <!-- End User Profile -->
                     <!-- ============================================================== -->
 
-                    <li class="nav-item right-side-toggle">
-                        <!-- <a class="nav-link  waves-effect waves-light" href="" id="cambiar_tienda" data-toggle="modal" data-target=".bs-example-modal-sm"> -->
-                        <a class="nav-link  waves-effect waves-light" href="" id="cambiar_tienda">
-                            <i class="ti-settings"></i>
-                        </a>
-                    </li>
+                    
 
                 </ul>
             </div>
@@ -124,41 +119,6 @@
     </header>
 
 
-
-    <!-- ************************************INICIIO DEL MODAL CAMBIO DE USUSARIOS*********************************** -->
-
-
-    <div class="row menu_ocultar">
-      <!-- sample modal content -->
-      <div id="cambiar_t" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-                <h3>cambiar de tienda</h3>
-            </div>
-            <center id="tienda_actual">
-            {{-- <label>TIENDA</label> --}}
-            </center>
-            <div class="modal-body">
-
-                 {!! Form::open(['route' => 'cambiotienda']) !!}
-
-                    <select class="form-control custom-select" name="tienda" id="mySmallModalLabel">
-
-                    </select>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal" id="cerrar_">Cerrar</button>
-                        {!! Form::button('Cambiar', ['class'=>'btn btn-success waves-effect','id'=>"cambiando",'type' => 'submit']) !!}
-                    </div>
-                 {!! Form::close() !!}
-
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.modal -->
     </div>
 
     <!-- ***************************************FIN DEL MODAL ************************************************** -->

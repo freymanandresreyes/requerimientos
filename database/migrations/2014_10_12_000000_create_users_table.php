@@ -25,9 +25,6 @@ class CreateUsersTable extends Migration
             $table->string('nombres', 60);
             $table->string('apellidos', 60);
             $table->string('telefono', 60);
-            $table->integer('tienda')->unsigned()->nullable();
-            $table->foreign('tienda')->references('id')->on('tiendas');
-            
         });
     }
 
