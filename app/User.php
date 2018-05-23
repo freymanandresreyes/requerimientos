@@ -28,9 +28,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function facturasUser()
+    public function areaUser()
   {
-      return $this->hasMany('App\facturas');
+      return $this->hasMany('App\Areas');
   }
 
 }

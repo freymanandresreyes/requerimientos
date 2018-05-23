@@ -22,9 +22,9 @@
         </li>
 
         <li>
-          <a href="{{-- route('bonos') --}}" class="collapse" href="javascript:void(0)" aria-expanded="true">
+          <a href="{{ route('areas') }}" class="collapse" href="javascript:void(0)" aria-expanded="true">
                       <i class="ti-gift"></i>
-                      <span class="hide-menu">Reg. Bonos</span>
+                      <span class="hide-menu">AREAS</span>
                     </a>
         </li>
 

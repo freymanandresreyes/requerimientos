@@ -13,4 +13,6 @@ let mix = require('laravel-mix');
 
 mix.scripts([
     'resources/assets/js/global/funciones_globales.js',
+    'resources/assets/js/areas/crear_area.js',
+    'resources/assets/js/buscar_area_editar/editar_area.js',
     ], 'public/js/compilados.js');

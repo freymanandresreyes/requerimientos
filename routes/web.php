@@ -74,4 +74,8 @@ Route::group(['middleware' => 'auth'], function () {
   /* ======================================================================*/
   /* ======================= NUEVAS RUTAS =================================*/
   /* ======================================================================*/
+
+  Route::get('areas', 'AreasController@areas')->name('areas');
+  Route::get('crear_area', 'AreasController@crear_area')->name('crear_area');
+  Route::get('editar_area', 'AreasController@editar_area')->name('editar_area');
 });

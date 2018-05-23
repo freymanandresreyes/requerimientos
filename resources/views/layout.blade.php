@@ -202,19 +202,14 @@
 <script src=" {!! asset('../assets/node_modules/sparkline/jquery.sparkline.min.js') !!}"></script>
 <!--Custom JavaScript -->
 <script src=" {!! asset('dist/js/custom.min.js') !!}"></script>
-<script src="{!! asset('js/crear_tienda.js') !!}" type="text/javascript"></script>
-<script src="{!! asset('js/caja_menor.js') !!}" type="text/javascript"></script>
-<script src="{!! asset('js/control_cajas.js') !!}" type="text/javascript"></script>
-<script src="{!! asset('js/control_tiendas.js') !!}" type="text/javascript"></script>
-<script src="{!! asset('js/configuraciones.js') !!}" type="text/javascript"></script>
-<script src="{!! asset('js/bonos.js') !!}" type="text/javascript"></script>
+
 
 <!-- This is data table -->
 <script src="{!! asset('../assets/node_modules/horizontal-timeline/js/horizontal-timeline.js') !!}"></script>
 <!-- Footable -->
 <script src=" {!! asset('../assets/node_modules/footable/js/footable.all.min.js') !!}"></script>
 <!--FooTable init-->
-<script src=" {!! asset('js/tablaCaja.js') !!}"></script>
+
 
 <!-- Libreria de Alertas  -->
 <script src=" {!! asset('dist/js/alertify.js') !!}"></script>
@@ -231,7 +226,7 @@
 <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
 <script src="{!! asset('js/plusis.js') !!}" type="text/javascript"></script>
-<script src="{!! asset('js/caja.js') !!}" type="text/javascript"></script>
+
 
 @yield('codigo')
 <!-- end - This is for export functionality only -->
