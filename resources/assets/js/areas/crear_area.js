@@ -25,7 +25,7 @@ $('#crear_area').click(function()
             {
                 alertify.error("ESTE LIDER YA TIENE UN AREA ASIGNADA.");
             }
-            elseif(respuesta==1)
+            else if(respuesta==1)
             {
                 alertify.success("AREA CREADA CON EXITO.");
                 setTimeout("location.href='areas'");

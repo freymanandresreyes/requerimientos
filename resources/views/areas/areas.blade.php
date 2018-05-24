@@ -76,9 +76,9 @@
                   @for($i = 0 ; $i < (count($consulta_areas)); $i++)
                   <tr>
                     <td>{{ $consulta_areas[$i]->nombre_area }}</td>
-                    <td>{{ $consulta_areas[$i]['userArea']->name }}</td>
+                    <td>@if($consulta_areas[$i]['userArea']){{ $consulta_areas[$i]['userArea']->name }}@else NO TIENE LIDER @endif</td>
                     <td>
-                        <input type="button" class="ti-pencil btn btn-warning" value="editar" id="{{ $consulta_areas[$i]['userArea']->id }}"></input>
+                        <input type="button" class="ti-pencil btn btn-warning" value="editar" id="{{ $consulta_areas[$i]->id }}"></input>
                     </td>
                   </tr>
                   {{-- @endforeach --}}
@@ -102,21 +102,12 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-                <h3>PRECIOS DE VENTA</h3>
+                <h3>EDITAR AREA</h3>
             </div>
             <div class="modal-body">
 
-                  <form>
-                      <div class="form-group"  style="display:none" >
-                          <label for="recipient-name" class="control-label">NOMBRE DEL AREA:</label>
-                          <input type="text" class="form-control" id="nombre_area">
-                      </div>
-                      <div class="form-group" >
-                          <label for="recipient-name" class="control-label">LIDER ENCARGADO:</label>
-                          <select>
-                            <option id="encargado" value=""></option>
-                          </select>
-                      </div>
+                  <form id="form">
+
                   </form>
               
               <div class="modal-footer">

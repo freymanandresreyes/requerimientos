@@ -3,7 +3,7 @@ $(function() {
     $(document).on('click', 'input[type="button"]', function(event) {
        let id = this.id;
        var url= URLdominio+'editar_area';
-       console.log(id)
+      //  console.log(id)
     //    alert(id);
     //    return(false);
        $.ajax({
@@ -15,9 +15,7 @@ $(function() {
         },
         dataType: 'json',
         success: function(respuesta){
-            console.log(respuesta);
-
-            // $('#encargado').val(respuesta.userArea.name);
+          $('#form').html(respuesta);
 
             $( "#editar_area" ).addClass( "show" );
 

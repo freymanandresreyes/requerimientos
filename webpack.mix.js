@@ -15,4 +15,5 @@ mix.scripts([
     'resources/assets/js/global/funciones_globales.js',
     'resources/assets/js/areas/crear_area.js',
     'resources/assets/js/buscar_area_editar/editar_area.js',
+    'resources/assets/js/guardar_editar_area/guardar_editar.js',
     ], 'public/js/compilados.js');
