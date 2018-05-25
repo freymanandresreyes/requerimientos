@@ -20,4 +20,7 @@ mix.scripts([
     'resources/assets/js/buscar_lider_area/buscar_lider_area.js',
     'resources/assets/js/estados/abrir_modal_estados.js',
     'resources/assets/js/estados/guardar_estados.js',
+    'resources/assets/js/estados/abrir_modal_editar.js',
+    'resources/assets/js/estados/input_estado.js',
+    'resources/assets/js/estados/guardar_editado.js',
     ], 'public/js/compilados.js');

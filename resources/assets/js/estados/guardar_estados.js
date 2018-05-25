@@ -21,7 +21,7 @@ $("#guardar_estados").click(function()
         }
         if(respuesta==0)
         {
-            alertify.error("YA EXISTE UN AREA CON ESTE NOMBRE.");
+            alertify.error("YA EXISTE UN ESTADO CON ESTE NOMBRE.");
         }
         }
       });//FIN AJAX

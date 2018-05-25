@@ -6,8 +6,7 @@ $('#guardareditar').click(function()
     var url = URLdominio+'guardar_editar';
     
     nombre_area=nombre_area.toUpperCase();
-    // console.log(nombre_area);
-    // console.log(encargado);
+    
     if(encargado==0 || nombre_area=="")
     {
         alertify.error("TODOS LOS CAMPOS SON OBLIGATORIOS.");  

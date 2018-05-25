@@ -90,4 +90,7 @@ Route::group(['middleware' => 'auth'], function () {
   // RUTAS PARA LOS ESTADOS
 // **********************************************************************************************
 Route::get('nuevo_estado', 'EstadosController@nuevo_estado')->name('nuevo_estado');
+Route::get('listar_estados', 'EstadosController@listar_estados')->name('listar_estados');
+Route::get('llenar_input', 'EstadosController@llenar_input')->name('llenar_input');
+Route::get('guardar_editar_estado', 'EstadosController@guardar_editar_estado')->name('guardar_editar_estado');
 });

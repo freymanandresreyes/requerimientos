@@ -23,8 +23,8 @@
 
         <li>
           <a href="{{ route('areas') }}" class="collapse" href="javascript:void(0)" aria-expanded="true">
-             <i class="ti-gift"></i>
-             <span class="hide-menu">AREAS</span>
+             <i class="mdi mdi-cube"></i>
+             <span class="hide-menu">Areas</span>
           </a>
         </li>
 
