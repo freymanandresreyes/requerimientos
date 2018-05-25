@@ -6,8 +6,8 @@ $('#guardareditar').click(function()
     var url = URLdominio+'guardar_editar';
     
     nombre_area=nombre_area.toUpperCase();
-    console.log(nombre_area);
-    console.log(encargado);
+    // console.log(nombre_area);
+    // console.log(encargado);
     if(encargado==0 || nombre_area=="")
     {
         alertify.error("TODOS LOS CAMPOS SON OBLIGATORIOS.");  
@@ -28,6 +28,11 @@ $('#guardareditar').click(function()
               if(respuesta==0)
             {
                 alertify.error("ESTE LIDER YA TIENE UN AREA ASIGNADA.");
+            }
+            else if(respuesta==1)
+            {
+                alertify.success("ACTUALIZACION REALIZADA CON EXITO.");
+                setTimeout("location.href='areas'");
             }
             }
           });//FIN AJAX

@@ -75,8 +75,19 @@ Route::group(['middleware' => 'auth'], function () {
   /* ======================= NUEVAS RUTAS =================================*/
   /* ======================================================================*/
 
+// ************************************************************************************
+  // RUTAS PARA LAS AREAS
+// ***************************************************************************************
   Route::get('areas', 'AreasController@areas')->name('areas');
   Route::get('crear_area', 'AreasController@crear_area')->name('crear_area');
   Route::get('editar_area', 'AreasController@editar_area')->name('editar_area');
   Route::get('guardar_editar', 'AreasController@guardar_editar')->name('guardar_editar');
+  Route::get('buscar_area_lider', 'AreasController@buscar_area_lider')->name('buscar_area_lider');
+  Route::get('quitar_area', 'AreasController@quitar_area')->name('quitar_area');
+
+
+// ********************************************************************************************
+  // RUTAS PARA LOS ESTADOS
+// **********************************************************************************************
+Route::get('nuevo_estado', 'EstadosController@nuevo_estado')->name('nuevo_estado');
 });

@@ -3,9 +3,7 @@ $(function() {
     $(document).on('click', 'input[type="button"]', function(event) {
        let id = this.id;
        var url= URLdominio+'editar_area';
-      //  console.log(id)
-    //    alert(id);
-    //    return(false);
+      
        $.ajax({
     
         url: url,

@@ -52,6 +52,62 @@
   </div>
 
 
+{{-- ******************************************************************** --}}
+{{-- AQUI INICI LA PARTE DE EDITAR EL IVA DE UNA TIENDA --}}
+{{-- ************************************************************************* --}}
+<br>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card ">
+        <div class="card-header bg-info">
+          <h4 class="m-b-0 text-white">QUITAR AREA A UN LIDER</h4>
+        </div>
+        <div class="card-body">
+          <form action="#" class="form-horizontal">
+            <div class="form-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="control-label text-right col-md-3">Lideres:</label>
+                    <div class="col-md-9">
+                      <select  class="form-control custom-select" id="lider_area">
+                        @if($consulta_users=='[]')
+                          <option value="0">NO HAY LIDERES CREADOS</option>
+                        @elseif($consulta_users!='[]')
+                          <option value="0">Seleciona una opcion</option>
+                        @foreach ( $consulta_users as $reg )
+                          <option value="{{ $reg->id }}">{{ $reg->name }}</option>
+                        @endforeach
+                        @endif
+                      </select>
+                      <small class="form-control-feedback"> Lider A Cargo De Un Area. </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label class="control-label text-right col-md-3">Area:</label>
+                    <div class="col-md-9" id="quitar">
+                      <input type="text" disabled id="area_lider"  class="form-control">
+                      <small class="form-control-feedback"> Area Del Lider Seleccionado. </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-right">
+                <button type="button" class="btn btn-success" id="quitar_area">QUITAR</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{{-- ***************************************************************************************************** --}}
+{{-- {{-- ***************************************************************************************************** --}}
+{{-- {{-- ***************************************************************************************************** --}}
   <br>
   <div class="row">
     <div class="col-lg-12">

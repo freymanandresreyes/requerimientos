@@ -23,10 +23,11 @@
 
         <li>
           <a href="{{ route('areas') }}" class="collapse" href="javascript:void(0)" aria-expanded="true">
-                      <i class="ti-gift"></i>
-                      <span class="hide-menu">AREAS</span>
-                    </a>
+             <i class="ti-gift"></i>
+             <span class="hide-menu">AREAS</span>
+          </a>
         </li>
+
 
         <!-- Menú de administracion de usuarios roles y permisos -->
         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fa fa-id-badge "></i><span class="hide-menu">Roles y permisos</span></a>

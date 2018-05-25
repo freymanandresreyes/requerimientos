@@ -16,4 +16,8 @@ mix.scripts([
     'resources/assets/js/areas/crear_area.js',
     'resources/assets/js/buscar_area_editar/editar_area.js',
     'resources/assets/js/guardar_editar_area/guardar_editar.js',
+    'resources/assets/js/quitar_area_lider/quitar_area_lider.js',
+    'resources/assets/js/buscar_lider_area/buscar_lider_area.js',
+    'resources/assets/js/estados/abrir_modal_estados.js',
+    'resources/assets/js/estados/guardar_estados.js',
     ], 'public/js/compilados.js');

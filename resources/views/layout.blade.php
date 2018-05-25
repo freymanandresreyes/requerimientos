@@ -111,16 +111,48 @@
                     <!-- End User Profile -->
                     <!-- ============================================================== -->
 
-                    
+                    <li class="nav-item right-side-toggle">
+                        <a class="nav-link  waves-effect waves-light" href="" id="abrir_estados">
+                            <i class="ti-settings"></i>
+                        </a>
+                    </li>
 
                 </ul>
             </div>
         </nav>
     </header>
-
-
     </div>
 
+
+
+
+    <!-- ***************************************INICIO DEL MODAL ************************************************** -->
+    <div class="row menu_ocultar">
+        <!-- sample modal content -->
+        <div id="estados" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h3>CREAR NUEVO ESTADO</h3>
+              </div>
+              <div class="modal-body">
+      
+                    <form id="form_estados">
+                        <div class="form-group" >
+                            <label for="recipient-name" class="control-label">NOMBRE DEL ESTADO:</label>
+                            <input type="text" class="form-control" id="nombre_estado" name="" value="">
+                        </div>
+                    </form>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal" id="cerrar_estados">Cerrar</button>
+                    <button type="button" class="btn btn-danger waves-effect waves-light" id="guardar_estados">Guardar</button>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
     <!-- ***************************************FIN DEL MODAL ************************************************** -->
 
 
