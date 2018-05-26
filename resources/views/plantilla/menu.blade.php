@@ -12,8 +12,8 @@
 
         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fa fa-tags "></i><span class="hide-menu">Ordenes</span></a>
           <ul aria-expanded="true" class="collapse">
-            <li><a href="{{-- route('caja_registradora') --}}">Generar Orden</a></li> 
-              <li><a href="{{-- route('ver_facturas') --}}">Ver Ordenes</a></li>     
+            <li><a href="{{ route('vista_generar') }}">Generar Orden</a></li> 
+              {{-- <li><a href="route('ver_facturas')">Ver Ordenes</a></li> --}}
               {{-- <li><a href="{{ route('caja_menor') }}">Caja Menor</a>
               <li><a href="{{ route('ver_entradas') }}">Entradas Caja Menor</a></li>
               <li><a href="{{ route('ver_salidas') }}">Salidas Caja Menor</a></li> --}} 

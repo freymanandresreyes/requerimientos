@@ -7,5 +7,8 @@ use App\Http\Controllers\Controller;
 
 class OrdenesController extends Controller
 {
-    //
+    public function vista_generar()
+    {
+        return view('ordenes.vista_ordenes');
+    }
 }
