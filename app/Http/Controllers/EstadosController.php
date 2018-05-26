@@ -12,7 +12,7 @@ class EstadosController extends Controller
     {
         $nuevo_estado=$request->nuevo_estado;
         $consulta=estados::all();
-        
+        $conteo=0;
         if($consulta=='[]')
         {
         $nuevo=new estados;
@@ -26,18 +26,24 @@ class EstadosController extends Controller
             for ($i = 0; $i <= (count($consulta))-1; $i++) {
                 if($consulta[$i]['nombre_estado']==$nuevo_estado)
                 {
-                    $respuesta=0;
-                    return response()->json($respuesta);
+                    $conteo=$consulta[$i]['nombre_estado'];
                 }
-                else
-                {
+              }
+              $var=(strlen($conteo));
+
+          if($var==1)
+            { 
                     $nuevo=new estados;
                     $nuevo->nombre_estado=$nuevo_estado;
                     $nuevo->save();
                     $respuesta=1;
                     return response()->json($respuesta);
-                }
-              }
+            }
+            elseif($var!=0)
+            {
+                $respuesta=0;
+                return response()->json($respuesta);
+            }
         }
     }
 
@@ -69,25 +75,33 @@ class EstadosController extends Controller
 
     public function guardar_editar_estado(Request $request)
     {
+        $conteo=0;
         $nuevo_estado=$request->editar_estado;
+        $id_estado=$request->id_estado;
         $consulta=estados::all();
-        for ($i = 0; $i <= (count($consulta))-1; $i++) {
+
+          for ($i = 0; $i <= (count($consulta))-1; $i++) 
+          {
             if($consulta[$i]['nombre_estado']==$nuevo_estado)
+            {
+                $conteo=$consulta[$i]['nombre_estado'];
+            }
+          }
+
+        $var=(strlen($conteo));
+
+          if($var==1)
+            { 
+                $consulta_estado=estados::find($id_estado);
+                $consulta_estado->nombre_estado=$nuevo_estado;
+                $consulta_estado->save();     
+                $respuesta=1;
+                return response()->json($respuesta);
+            }
+            elseif($var!=0)
             {
                 $respuesta=0;
                 return response()->json($respuesta);
             }
-            // elseif($consulta[$i]['nombre_estado']!=$nuevo_estado)
-            // {
-                
-            // }
-          }
-          
-                $buscar=$consulta[$i]['id'];
-                $nueva_consulta=estados::find($buscar);
-                $nueva_consulta->nombre_estado=$nuevo_estado;
-                $nueva_consulta->save();
-                $respuesta=1;
-                return response()->json($respuesta);
     }
 }
