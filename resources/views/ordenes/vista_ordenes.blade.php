@@ -7,7 +7,7 @@
     <div class="col-lg-12">
       <div class="card ">
         <div class="card-header bg-info">
-          <h4 class="m-b-0 text-white">CREAR AREA</h4>
+          <h4 class="m-b-0 text-white">GENERAR ORDEN</h4>
         </div>
         <div class="card-body">
           <form action="#" class="form-horizontal">
@@ -15,25 +15,102 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group row">
-                    <label class="control-label text-right col-md-3">Nombre Del Area:</label>
+                    <label class="control-label text-right col-md-3">Lider:</label>
                     <div class="col-md-9">
-                      <input type="text" id=""  class="form-control">
-                      <small class="form-control-feedback"> Area a crear. </small>
+                      <input type="text" id="lider" value="{{ $nombre_user }}" disabled class="form-control">
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group row">
-                    <label class="control-label text-right col-md-3">Lider:</label>
+                    <label class="control-label text-right col-md-3">Area:</label>
                     <div class="col-md-9">
-                      <select  class="form-control custom-select" id="">
-                          <option value="0">NO HAY LIDERES CREADOS</option>
-                      </select>
-                      <small class="form-control-feedback"> Lider que estará a cargo del area. </small>
+                      <input type="text" disabled value="{{ $nombre_area }}" class="form-control">
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="col-md-10">
+                  <div class="form-group row">
+                    <label class="control-label text-right col-md-3"></label>
+                    <div class="col-md-9">
+                      <br>
+                      <br>
+                      <select class="form-control custom-select" name="" id="">
+                        <option value="0">SELECCIONA EL AREA A LA CUAL LE VAS HACER EL REQUERIMIENTO</option>
+                        @foreach ( $consulta_areas as $reg )
+                            <option value="{{ $reg->id }}">{{ $reg->nombre_area }}</option>
+                        @endforeach
+                      </select>
+                      <br>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>                
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card ">
+        <div class="card-body">
+          <form action="#" class="form-horizontal">
+            <div class="form-body">
+              <div class="row">
+               <div class="col-md-10">
+                  <div class="form-group row">
+                    <label class="control-label text-right col-md-3">Itemn (1):</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control" ></textarea>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-md-10">
+                  <div class="form-group row">
+                    <label class="control-label text-right col-md-3">Itemn (2):</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control" ></textarea>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-md-10">
+                  <div class="form-group row">
+                    <label class="control-label text-right col-md-3">Itemn (3):</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control" ></textarea>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-md-10">
+                  <div class="form-group row">
+                    <label class="control-label text-right col-md-3">Itemn (4):</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control" ></textarea>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-md-10">
+                  <div class="form-group row">
+                    <label class="control-label text-right col-md-3">Itemn (5):</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control" ></textarea>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-md-10">
+                  <div class="form-group row">
+                    <label class="control-label text-right col-md-3">Itemn (6):</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control" ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>                
               <div class="text-right">
                 <button type="button" class="btn btn-success" id="">Crear</button>
               </div>
@@ -44,5 +121,5 @@
     </div>
   </div>
 
-
 @endsection
+              

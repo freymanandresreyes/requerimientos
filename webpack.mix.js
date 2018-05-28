@@ -23,4 +23,6 @@ mix.scripts([
     'resources/assets/js/estados/abrir_modal_editar.js',
     'resources/assets/js/estados/input_estado.js',
     'resources/assets/js/estados/guardar_editado.js',
+    'resources/assets/js/ordenes/crear_orden.js',
+
     ], 'public/js/compilados.js');
