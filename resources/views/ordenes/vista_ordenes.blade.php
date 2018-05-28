@@ -25,7 +25,7 @@
                   <div class="form-group row">
                     <label class="control-label text-right col-md-3">Area:</label>
                     <div class="col-md-9">
-                      <input type="text" disabled value="{{ $nombre_area }}" class="form-control">
+                      <input type="text" id="area_remitente" disabled value="{{ $nombre_area }}" class="form-control">
                     </div>
                   </div>
                 </div>
@@ -35,7 +35,7 @@
                     <div class="col-md-9">
                       <br>
                       <br>
-                      <select class="form-control custom-select" name="" id="">
+                      <select class="form-control custom-select" name="" id="area_receptora">
                         <option value="0">SELECCIONA EL AREA A LA CUAL LE VAS HACER EL REQUERIMIENTO</option>
                         @foreach ( $consulta_areas as $reg )
                             <option value="{{ $reg->id }}">{{ $reg->nombre_area }}</option>
@@ -46,7 +46,10 @@
                     </div>
                   </div>
                 </div>
-              </div>                
+              </div>
+              <div class="text-right">
+                <button type="button" class="btn btn-success" id="agregar_item">Agregar Item</button>
+              </div>             
             </div>
           </form>
         </div>
@@ -65,54 +68,14 @@
                <div class="col-md-10">
                   <div class="form-group row">
                     <label class="control-label text-right col-md-3">Itemn (1):</label>
-                    <div class="col-md-9">
-                      <textarea class="form-control" ></textarea>
-                    </div>
-                  </div>
-                </div>
-              <div class="col-md-10">
-                  <div class="form-group row">
-                    <label class="control-label text-right col-md-3">Itemn (2):</label>
-                    <div class="col-md-9">
-                      <textarea class="form-control" ></textarea>
-                    </div>
-                  </div>
-                </div>
-              <div class="col-md-10">
-                  <div class="form-group row">
-                    <label class="control-label text-right col-md-3">Itemn (3):</label>
-                    <div class="col-md-9">
-                      <textarea class="form-control" ></textarea>
-                    </div>
-                  </div>
-                </div>
-              <div class="col-md-10">
-                  <div class="form-group row">
-                    <label class="control-label text-right col-md-3">Itemn (4):</label>
-                    <div class="col-md-9">
-                      <textarea class="form-control" ></textarea>
-                    </div>
-                  </div>
-                </div>
-              <div class="col-md-10">
-                  <div class="form-group row">
-                    <label class="control-label text-right col-md-3">Itemn (5):</label>
-                    <div class="col-md-9">
-                      <textarea class="form-control" ></textarea>
-                    </div>
-                  </div>
-                </div>
-              <div class="col-md-10">
-                  <div class="form-group row">
-                    <label class="control-label text-right col-md-3">Itemn (6):</label>
-                    <div class="col-md-9">
+                    <div class="col-md-9" id="item">
                       <textarea class="form-control" ></textarea>
                     </div>
                   </div>
                 </div>
               </div>                
               <div class="text-right">
-                <button type="button" class="btn btn-success" id="">Crear</button>
+                <button type="button" class="btn btn-success" id="crear_orden">Crear</button>
               </div>
             </div>
           </form>
@@ -122,4 +85,3 @@
   </div>
 
 @endsection
-              
